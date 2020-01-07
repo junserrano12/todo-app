@@ -1,0 +1,19 @@
+@import '../../assets/sass/modules/input.module.scss';
+
+.Todo {
+    padding: 24px;
+}
+
+.container {
+    margin-bottom: 24px;
+}
+
+.form {
+    width: 300px;
+    margin: 0 0 24px;
+}
+
+.list {
+    display: block;
+    position: relative;
+}

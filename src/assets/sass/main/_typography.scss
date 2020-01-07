@@ -1,0 +1,39 @@
+[class*="title"] {
+    font: $normal $medium;
+
+    &[class*="-primary"] {
+        font: $semibold $large;
+    }
+
+    &[class*="-secondary"] {
+        font: $bold $medium;
+    }
+}
+
+[class*="label"] {
+    font: $regular;
+
+    &[class*="-primary"] {
+        font: $medium;
+    }
+
+    &[class*="-secondary"] {
+        font: $xsmall;
+    }
+}
+
+[class*="caption"] {
+    font: $regular;
+
+    &[class*="-primary"] {
+        font: $small;
+    }
+
+    &[class*="-secondary"] {
+        font: $xxsmall;
+    }
+}
+
+[class*="link"] {
+    color: $linkcolor;
+}

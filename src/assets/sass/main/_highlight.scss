@@ -1,0 +1,9 @@
+[class*="highlight"] {
+    color: inherit;
+
+    &[class*="-primary"] {
+        background: #1e88e5;
+        color: #ffffff;
+    }
+
+}

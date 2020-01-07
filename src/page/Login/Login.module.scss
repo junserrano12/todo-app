@@ -1,0 +1,37 @@
+@import '../../assets/sass/modules/input.module.scss';
+
+.container {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+
+    > * {
+
+        :global .button {
+            width: 100%;
+        }
+
+        &:first-child {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 320px;
+    border-radius: 8px;
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.form {
+    display: block;
+    position: relative;
+}

@@ -1,0 +1,74 @@
+@import '../base.scss';
+
+.mapContainer,
+.linkContainer,
+.titleContainer,
+.formContainer,
+.listContainer {
+    display: block;
+    position: relative;
+}
+
+.box {
+    background: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+}
+
+.group {
+    display: block;
+    position: relative;
+    padding: 16px;
+    border-bottom: 1px dotted #9f9f9f;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Info Group Details */
+.infoGroup {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 16px;
+
+    > * {
+        font: $light $regular;
+        &:first-child {
+            font: $normal $regular;
+            margin-bottom: 8px;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &[class*="inlineGroup"] {
+        flex-flow: row wrap;
+        margin-bottom: 0;
+
+        > * {
+            font: $normal $small;
+
+            &:first-child {
+                margin-bottom: 0;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &[class*="customGroup"] {
+        margin-bottom: 0;
+
+        > *  {
+            font: $semibold $xlarge;
+
+            &:first-child {
+                margin-bottom: 0;
+                font: $light $regular;
+            }
+        }
+
+    }
+}

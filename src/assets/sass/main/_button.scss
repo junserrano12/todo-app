@@ -1,0 +1,32 @@
+%button {
+    display: inline-block;
+    position: relative;
+    padding: 8px;
+    text-align: center;
+}
+
+.button {
+    @extend %button;
+    background: #1e88e5;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+[class*="button"] {
+    cursor: pointer;
+
+    &[class*="default"] {
+        @extend %button;
+        cursor: pointer;
+    }
+
+    &[class*="primary"] {
+        @extend %button;
+        cursor: pointer;
+        background: #1e88e5;
+        color: #ffffff;
+        font: $bold $medium;
+        border-radius: 4px;
+        box-shadow: 0 2px 0 0 #0168c4;
+    }
+}
