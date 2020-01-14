@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useMemo } from './node_modules/react';
+import React, { createContext, useContext, useState, useMemo } from 'react';
 
 export default function createStore() {
   const context = createContext();

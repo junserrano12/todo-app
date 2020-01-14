@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import '../../assets/sass/main.scss'
 import style from './Login.module.scss'
 import * as api from '../../api'
-import { useAuthContext, useTestDataContext } from '../../Context/auth';
+import { useAuthContext, useTestDataContext } from '../../context/auth';
 
 const Login = () => {
 
